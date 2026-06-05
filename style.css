@@ -1,0 +1,103 @@
+/* 1. Global Reset (Ensure a clean sans-serif font is used) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* A clean font makes a huge difference */
+}
+
+/* 2. Updated Navbar Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 80px;      /* Slightly tighter vertical padding, wider horizontal padding */
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    
+    background-color: #111111; /* Dark ash / charcoal background color from image.png */
+    color: #fff; 
+}
+
+/* 3. New Logo Styling */
+.logo {
+    font-size: 26px;         /* Made it bigger */
+    font-weight: 700;         /* Made it extra bold */
+    letter-spacing: -0.5px;  /* Keeps the clean, tight branding look */
+}
+
+/* 4. Navbar Links Styling */
+ul {
+    display: flex;
+    gap: 35px;               /* Clean spacing between the links */
+    list-style: none;
+}
+
+ul li {
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Subtle hover effect matching the original design */
+ul li:hover {
+    color: #b3b3b3;          /* Turns slightly ash-grey when hovered */
+}
+
+/* 3. Hero Section (PUT THE IMAGE HERE) */
+.hero {
+    /* Try this exact path first. If it fails, remove the "Images/" folder part completely */
+    background-image: url("Background.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+    width: 100%;
+}
+
+/* 4. Overlay Styles (PUT THE DARK TINT AND CENTERING HERE) */
+.overlay {
+    width: 100%;
+    height: 100%;
+    /* This creates the dark transparent tint over your image */
+    background-color: rgba(0, 0, 0, 0.4); 
+    
+    /* Centering the text and buttons */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff; 
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+/* 5. Buttons */
+button {
+    padding: 12px 25px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+button:last-child {
+    background-color: #fff;
+    color: #000;
+}
